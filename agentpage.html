@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="nl">
+	
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="jouw naam">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Howdy FED2324</title>
+	
+	<link href="styles/style.css" rel="stylesheet">
+	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+</head>
+
+
+<body>
+
+    <header>
+        <!-- het logo -->
+    
+        <section class="logos">
+        <a href="#">
+          <img src="images/riotgames_logo_white.png" alt="go home"/></a>
+    
+          <img src="images/valorant_logo_white.webp" alt="home">
+    
+        </section>
+        
+        <!-- de open button -->
+        <!-- de button is niet relevant voor screenreaders -->
+        <!-- met aria-hidden="true" 'verstop' je de button voor ze -->
+        <button aria-hidden="true"><img src="https://assets.codepen.io/274456/ui-icon-hamburger.svg" alt="" /></button>
+    
+        
+        
+        
+        <!--  het menu -->
+        <nav>
+          
+          <!-- de sluit button -->
+          <!-- de button is ook niet relevant voor screenreaders -->
+          <button aria-hidden="true"><img src="https://assets.codepen.io/274456/ui-icon-cross.svg" alt="" /></button>
+    
+          
+          
+          <ul>
+            <li><a class="active"> </a></li>
+            <li><a href="#">Game info</a></li>
+            <li><a href="#">Media</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Leaderboards</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Our Socials</a></li>
+            <li><a href="#">ESports</a></li>
+            <li><a href="#">Merch</a></li>
+            </ul>
+    
+            <ul>
+            <li><a class="search-icon"><img src="images/search-icon.png" alt="home"> </a></li>
+            <li><a class="world_icon-white"><img src="images/world_icon-white.png" alt="home"> </a></li>
+            <a class="play-button-nav"><img aria-hidden="true" />Play now</a>
+          </ul>
+          
+        </nav>
+        
+    
+    
+        
+        
+      </header>
+
+<img class="image-background-agents" src="images/agents-background.jpg" alt="">
+      
+
+
+
+  <!-- Agent sectie -->
+  <section class="agent-section">
+    <div class="agents-list" id="agentsList">
+      
+    </div>
+    <div class="agent-image">
+      <img id="agentImage" src="" alt="Agent Image">
+    </div>
+
+      <div class="agent-details">
+      <h1 class="role-type" id="agentRole">CONTROLLER</h1>
+      <h2 class="biography-title">Biography</h2>
+      <p class="biography-content" id="agentBiography">
+        Hailing from India’s coast, Harbor storms the field wielding ancient technology with dominion over water.
+      </p>
+    </div>
+  </section>
+
+  <!-- Special Abilities sectie -->
+
+
+  
+  <section class="special-abilities-section">
+    
+
+    <section class="special-abilities-info">
+
+      <h2><span>Special Abilities</span></h2>
+
+<section class="specials-icons">
+  <ul>
+    <li>     <img src="images/specialabilities_icon1.png" alt="specialabilities icon">
+    </li>
+<li>     <img src="images/specialabilities_icon2.png" alt="specialabilities icon">
+</li>
+<li>     <img src="images/specialabilities_icon3.png" alt="specialabilities icon">
+</li>
+<li>     <img src="images/specialabilities_icon4.png" alt="specialabilities icon">
+</li>
+    </ul>
+
+    </section>
+
+    
+
+    <h2 class="ability-title">Q - INCENDIARY
+    </h2>
+    <p class="ability-description">
+      EQUIP an incendiary grenade launcher. FIRE to launch a grenade that detonates as it comes to a rest on the floor, creating a lingering fire zone that damages players within the zone.    </p>
+    </section>
+
+    <section class="special-abilities-video">
+
+      <video autoplay muted loop src="images/Brimstone_v1.mp4"></video>
+
+    </section>
+
+ 
+    </section>
+
+  <!-- Related Content sectie -->
+  <section class="related-content-section">
+    <h1 class="section-title">Related Content</h1>
+    <ul class="related-content-list">
+      <li class="related-content-item">
+        <img src="related-content-image1.jpg" alt="Related Content Image 1">
+        <div class="related-content-details">
+          <h3>01</h3>
+          <p>TURN THE TIDES - Harbor Agent Trailer // VALORANT</p>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+
+    <!-- Footer sectie -->
+
+    <footer class="footer-section">
+        <div class="footer-buttons">
+            <button class="download-button">Download Game Client</button>
+            <button class="download-button">Download Riot Games Mobile Companion App</button>
+        </div>
+
+        <div class="social-media-section">
+            <a href="#" class="social-icon"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="#" class="social-icon"><img src="twitter-icon.png" alt="Twitter"></a>
+            <a href="#" class="social-icon"><img src="instagram-icon.png" alt="Instagram"></a>
+            <a href="#" class="social-icon"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+            <a href="#" class="social-icon"><img src="youtube-icon.png" alt="YouTube"></a>
+        </div>
+
+        <div class="rights-section">
+            <p class="rights-text">All rights reserved. Trademarks, logos, and images are the property of their respective owners.</p>
+        </div>
+
+        <div class="info-buttons-section">
+            <button class="info-button">Privacy Notice</button>
+            <button class="info-button">Terms and Services</button>
+            <button class="info-button">Company Information</button>
+            <button class="info-button">Cookie Preferences</button>
+        </div>
+
+    </footer>
+
+    <script src="/scripts/script.js"></script>
+
+</body>
+	
+</html>
