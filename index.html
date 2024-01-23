@@ -11,62 +11,71 @@
 	<link href="styles/style.css" rel="stylesheet">
 	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap">
 
 </head>
 
 <body>
 
-<header>
-    <!-- het logo -->
 
-    <section class="logos">
-    <a href="#">
-      <img src="images/riotgames_logo_white.png" alt="go home"/></a>
 
-      <img src="images/valorant_logo_white.webp" alt="home">
 
-    </section>
+<!-- portfolio code v v v v v v v v v v v v v -->
+
+
+
+
+    <header>
+      <!-- het logo -->
+  
+      <section class="logos">
+        <a href="#">
+          <img src="images/riotgames_logo_white.png" alt="go home"/></a>
     
-    <!-- de open button -->
-    <!-- de button is niet relevant voor screenreaders -->
-    <!-- met aria-hidden="true" 'verstop' je de button voor ze -->
-    <button aria-hidden="true"><img src="https://assets.codepen.io/274456/ui-icon-hamburger.svg" alt="" /></button>
-
+          <img src="images/valorant_logo_white.webp" alt="home">
     
+        </section>
+        
+        <!-- de open button -->
+        <!-- de button is niet relevant voor screenreaders -->
+        <!-- met aria-hidden="true" 'verstop' je de button voor ze -->
+        <button aria-hidden="true"><img src="https://assets.codepen.io/274456/ui-icon-hamburger.svg" alt="" /></button>
     
+        
+        
+        
+        <!--  het menu -->
+        <nav>
+          
+          <!-- de sluit button -->
+          <!-- de button is ook niet relevant voor screenreaders -->
+          <button aria-hidden="true"><img src="https://assets.codepen.io/274456/ui-icon-cross.svg" alt="" /></button>
     
-    <!--  het menu -->
-    <nav>
-      
-      <!-- de sluit button -->
-      <!-- de button is ook niet relevant voor screenreaders -->
-      <button aria-hidden="true"><img src="https://assets.codepen.io/274456/ui-icon-cross.svg" alt="" /></button>
+        
+        
+        <ul class="nav-tabs">
+          <li><span><a href="#" class="active">Game info</a></span></li>
+          <li><a href="agentpage.html">Media</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Leaderboards</a></li>
+          <li><a href="#">Support</a></li>
+          <li><a href="#">Our Socials</a></li>
+          <li><a href="#">ESports</a></li>
+          <li><a href="#">Merch</a></li>
+          </ul>
+  
+          <ul class="nav-icons">
+            <li class="search-bar"><img class="search-icon" src="images/search-icon.png" alt="home"> </li>
+            <li class="world_icon-white"><img  src="images/world_icon-white.png" alt="home"> </li>
+          </ul>
 
-      
-      
-      <ul>
-        <li><a class="active"> </a></li>
-        <li><a href="#">Game info</a></li>
-        <li><a href="#">Media</a></li>
-        <li><a href="#">News</a></li>
-        <li><a href="#">Leaderboards</a></li>
-        <li><a href="#">Support</a></li>
-        <li><a href="#">Our Socials</a></li>
-        <li><a href="#">ESports</a></li>
-        <li><a href="#">Merch</a></li>
-        </ul>
-
-        <ul>
-        <li><a class="search-icon"><img src="images/search-icon.png" alt="home"> </a></li>
-        <li><a class="world_icon-white"><img src="images/world_icon-white.png" alt="home"> </a></li>
-        <a class="play-button-nav"><img aria-hidden="true" />Play now</a>
-      </ul>
-      
-    </nav>
-    
-
-
+          <ul class="nav-play-button"> 
+            <li>
+              <a class="play-button-nav">Play now</a>
+            </li>
+          </ul>
+        
+      </nav>
     
     
   </header>
@@ -74,8 +83,10 @@
 <!-- Video section -->
 <section class="video-section">
   <div class="text-container">
+
+    <p>A 5v5 character-based tactical shooter</p> 
     <h2>Valorant</h2>
-    <p>A 5v5 character-based tactical shooter</p>
+
     <button class="play-now-button">Play Now</button>
   </div>
   <video autoplay muted loop src="images/Valorant_Deadlock_Homepage_Desktop.mp4" type="video/mp4">
@@ -87,9 +98,11 @@
   
      <section class="articles">
       
-        <h2>LATEST NEWS</h2>
-
+        
+      <h2>LATEST NEWS</h2>
         <section class="article-section">
+
+          
         <article>
           <img src="images/article_1.webp" alt="Article Image">
           <div class="article-content">
@@ -142,11 +155,12 @@
   <!-- Info Sections -->
 
   <section class="info-section">
-    
+
+    <h2 ><span>WE ARE VALORANT</span></h2>
   
   <section class="feature-section">
     <ul class="info">
-      <h2 >WE ARE VALORANT</h2>
+
       <h3 >DEFY THE LIMITS</h3>
       <p >
           Blend your style and experience on a global, competitive stage. You have 13 rounds to attack and defend your side using sharp gunplay and tactical abilities. And, with one life per-round, you'll need to think faster than your opponent if you want to survive. Take on foes across Competitive and Unranked modes as well as Deathmatch and Spike Rush.
@@ -161,9 +175,8 @@
 
   </section>
   
-<div class="background-div1">
 
-  <section class="feature-section">
+  <section class="feature-section youragents">
 
     <ul class="content">
       <img class="youragents"  src="images/agents-group.png" alt="agents image">
@@ -177,9 +190,9 @@
     </ul>
 
   </section>
-</div>
+
   
-  <section class="feature-section">
+  <section class="feature-section maps">
     <ul class="info">
       <h2 >YOUR MAPS</h2>
       <h3 >FIGHT AROUND THE WORLD</h3>
@@ -202,32 +215,55 @@
   
       <!-- Footer sectie -->
   
-      <footer class="footer-section">
-          <div class="footer-buttons">
-              <button class="download-button">Download Game Client</button>
-              <button class="download-button">Download Riot Games Mobile Companion App</button>
-          </div>
-  
-          <div class="social-media-section">
-              <a href="#" class="social-icon"><img src="facebook-icon.png" alt="Facebook"></a>
-              <a href="#" class="social-icon"><img src="twitter-icon.png" alt="Twitter"></a>
-              <a href="#" class="social-icon"><img src="instagram-icon.png" alt="Instagram"></a>
-              <a href="#" class="social-icon"><img src="linkedin-icon.png" alt="LinkedIn"></a>
-              <a href="#" class="social-icon"><img src="youtube-icon.png" alt="YouTube"></a>
-          </div>
-  
-          <div class="rights-section">
-              <p class="rights-text">All rights reserved. Trademarks, logos, and images are the property of their respective owners.</p>
-          </div>
-  
-          <div class="info-buttons-section">
-              <button class="info-button">Privacy Notice</button>
-              <button class="info-button">Terms and Services</button>
-              <button class="info-button">Company Information</button>
-              <button class="info-button">Cookie Preferences</button>
-          </div>
-  
-      </footer>
+      <footer>
+        <div class="footer-buttons">
+            <a class="download-button">Download Game Client</a>
+            <a class="download-button">Download Riot Games Mobile Companion App</a>
+        </div>
+
+        <ul class="footer-section social-icons">
+          <li><a href="#" ><img src="images/socials-twitter.png" alt="Facebook"></a></li>
+        
+          <li><a href="#" ><img src="images/socials-youtube.png" alt="Facebook"></a></li>
+        
+          <li><a href="#" ><img src="images/socials-icon-insta.png" alt="Facebook"></a></li>
+        
+          <li><a href="#" ><img src="images/socials-icon-facebook.png" alt="Facebook"></a></li>
+        
+          <li><a href="#" ><img src="images/socials-icon-discord.png" alt="Facebook"></a></li>
+        
+        </ul>
+
+        <ul class="footer-section logos">
+
+          <li><a href="#" ><img src="images/riotgames_logo_white.png" alt="Twitter"></a></li>
+          <li> <a href="#" ><img src="images/Valorant_logo-color.png" alt="Facebook"></a></li>
+
+        </ul>
+
+
+        <div class="rights-section">
+            <p class="rights-text">© 2020-2024 Riot Games, Inc. RIOT GAMES, VALORANT and any associated logos are trademarks, service marks, and/or registered trademarks of Riot Games, Inc.</p>
+        </div>
+
+        <ul class="footer-section rights">
+          <li><a >Privacy Notice</a></li>
+          <li><a >Terms and Services</a></li>
+          <li><a >Company Information</a></li>
+          <li><a >Cookie Preferences</a></li>
+        </ul>
+
+        <ul class="pegi-section">
+          <li><a href="#" ><img src="images/footer-icon_1.jpg" alt="pegi"></a></li>
+          <li><a href="#" ><img src="images/footer-icon_2.png" alt="pegi"></a></li>
+          <li><a href="#" ><img src="images/footer-icon_3.png" alt="pegi"></a></li>
+        </ul>
+
+
+
+    </footer>
+
+
       
       <script src="/scripts/script.js"></script>
 

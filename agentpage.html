@@ -11,7 +11,7 @@
 	<link href="styles/style.css" rel="stylesheet">
 	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap">
 
 
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
@@ -49,27 +49,32 @@
           <!-- de button is ook niet relevant voor screenreaders -->
           <button aria-hidden="true"><img src="https://assets.codepen.io/274456/ui-icon-cross.svg" alt="" /></button>
     
-          
-          
-          <ul>
-            <li><a class="active"> </a></li>
-            <li><a href="#">Game info</a></li>
-            <li><a href="#">Media</a></li>
-            <li><a href="#">News</a></li>
-            <li><a href="#">Leaderboards</a></li>
-            <li><a href="#">Support</a></li>
-            <li><a href="#">Our Socials</a></li>
-            <li><a href="#">ESports</a></li>
-            <li><a href="#">Merch</a></li>
-            </ul>
-    
-            <ul>
-            <li><a class="search-icon"><img src="images/search-icon.png" alt="home"> </a></li>
-            <li><a class="world_icon-white"><img src="images/world_icon-white.png" alt="home"> </a></li>
-            <a class="play-button-nav"><img aria-hidden="true" />Play now</a>
+        
+        
+        <ul class="nav-tabs">
+          <li><a href="index.html" >Game info</a></li>
+          <li><span><a href="#" class="active" >Media</a></span></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Leaderboards</a></li>
+          <li><a href="#">Support</a></li>
+          <li><a href="#">Our Socials</a></li>
+          <li><a href="#">ESports</a></li>
+          <li><a href="#">Merch</a></li>
           </ul>
-          
-        </nav>
+  
+          <ul class="nav-icons">
+            <li class="search-bar"><img class="search-icon" src="images/search-icon.png" alt="home"> </li>
+            <li class="world_icon-white"><img  src="images/world_icon-white.png" alt="home"> </li>
+          </ul>
+
+          <ul class="nav-play-button"> 
+            <li>
+              <a class="play-button-nav">Play now</a>
+            </li>
+          </ul>
+        
+      </nav>
+    
         
     
     
@@ -77,9 +82,11 @@
         
       </header>
 
-<img class="image-background-agents" src="images/agents-background.jpg" alt="">
+<!-- <img class="image-background-agents" src="images/agents-background.jpg" alt=""> -->
       
+<div class="agents-hero-backgroud">
 
+</div>
 
 
   <!-- Agent sectie -->
@@ -91,9 +98,12 @@
       <img id="agentImage" src="" alt="Agent Image">
     </div>
 
-      <div class="agent-details">
+
+    <div class="agent-details">
+      <h2 class="role-title">// Role</h2>
       <h1 class="role-type" id="agentRole">CONTROLLER</h1>
-      <h2 class="biography-title">Biography</h2>
+  
+      <h2 class="biography-title">// Biography</h2>
       <p class="biography-content" id="agentBiography">
         Hailing from India’s coast, Harbor storms the field wielding ancient technology with dominion over water.
       </p>
@@ -103,86 +113,193 @@
   <!-- Special Abilities sectie -->
 
 
-  
+
   <section class="special-abilities-section">
-    
-
     <section class="special-abilities-info">
+      <h2 class="detailpage-title">Special Abilities</h2>
 
-      <h2><span>Special Abilities</span></h2>
+      <section class="specials-icons">
+        <ul>
+          <li >
+            <img src="images/specialabilities_icon1.png" alt="specialabilities icon">
+          </li>            
 
-<section class="specials-icons">
-  <ul>
-    <li>     <img src="images/specialabilities_icon1.png" alt="specialabilities icon">
-    </li>
-<li>     <img src="images/specialabilities_icon2.png" alt="specialabilities icon">
-</li>
-<li>     <img src="images/specialabilities_icon3.png" alt="specialabilities icon">
-</li>
-<li>     <img src="images/specialabilities_icon4.png" alt="specialabilities icon">
-</li>
-    </ul>
+          <li >
+            <img src="images/specialabilities_icon2.png" alt="specialabilities icon">
+          </li>  
 
-    </section>
+          <li >
+            <img src="images/specialabilities_icon3.png" alt="specialabilities icon">
+          </li>  
 
-    
+          <li >
+            <img src="images/specialabilities_icon4.png" alt="specialabilities icon">
+          </li>  
+        </ul>
+      </section>
 
-    <h2 class="ability-title">Q - INCENDIARY
-    </h2>
-    <p class="ability-description">
-      EQUIP an incendiary grenade launcher. FIRE to launch a grenade that detonates as it comes to a rest on the floor, creating a lingering fire zone that damages players within the zone.    </p>
+      <h2 class="ability-title" id="abilityTitle">Q - INCENDIARY</h2>
+      <p class="ability-description" id="abilityDescription">EQUIP an incendiary grenade launcher. FIRE to launch
+        a grenade that detonates as it comes to a rest on the floor, creating a lingering fire zone that damages players
+        within the zone.</p>
     </section>
 
     <section class="special-abilities-video">
-
-      <video autoplay muted loop src="images/Brimstone_v1.mp4"></video>
-
+      <video autoplay muted loop id="abilityVideo" src="images/Brimstone_v1.mp4"></video>
     </section>
+    
+  </section>
 
- 
-    </section>
+
+
+
+
+
 
   <!-- Related Content sectie -->
+
   <section class="related-content-section">
-    <h1 class="section-title">Related Content</h1>
+    <h2 class="section-title related-content">Related Content</h2>
+  
+    <!-- tabs -->
+    <div class="pagination">
+      <button class="page-tab active" data-page="1"></button>
+      <button class="page-tab" data-page="2"></button>
+
+    </div>
+  
+    <!-- Inhoudslijst -->
     <ul class="related-content-list">
-      <li class="related-content-item">
-        <img src="related-content-image1.jpg" alt="Related Content Image 1">
+      <!-- Eerste pagina -->
+      <li class="related-content-item page-1">
+        <img src="images/related_1.webp" alt="Related Content Image 1">
         <div class="related-content-details">
           <h3>01</h3>
-          <p>TURN THE TIDES - Harbor Agent Trailer // VALORANT</p>
+          <p>3 years ago</p>
+          <p><span>TURN THE TIDES - Harbor Agent Trailer // VALORANT</span></p>
         </div>
       </li>
+  
+      <li class="related-content-item page-1">
+        <img src="images/related_2.webp" alt="Related Content Image 1">
+        <div class="related-content-details">
+          <h3>02</h3>
+          <p>3 years ago</p>
+          <p><span>TURN THE TIDES - Harbor Agent Trailer // VALORANT</span></p>
+        </div>
+      </li>
+  
+      <li class="related-content-item page-1">
+        <img src="images/related_3.webp" alt="Related Content Image 1">
+        <div class="related-content-details">
+          <h3>03</h3>
+          <p>3 years ago</p>
+          <p><span>TURN THE TIDES - Harbor Agent Trailer // VALORANT</span></p>
+        </div>
+      </li>
+  
+      <li class="related-content-item page-1">
+        <img src="images/related_4.webp" alt="Related Content Image 1">
+        <div class="related-content-details">
+          <h3>04</h3>
+          <p>3 years ago</p>
+          <p><span>TURN THE TIDES - Harbor Agent Trailer // VALORANT</span></p>
+        </div>
+      </li>
+  
+
+  
+      <!-- Tweede pagina ( hidden nu ) -->
+      <li class="related-content-item page-2 hidden">
+        <img src="images/related_5.webp" alt ="Related Content Image 2">
+        <div class="related-content-details">
+          <h3>05</h3>
+          <p>3 years ago</p>
+          <p><span>Next Content Title</span></p>
+        </div>
+      </li>
+  
+      <li class="related-content-item page-2 hidden">
+        <img src="images/related_6.webp" alt ="Related Content Image 2">
+        <div class="related-content-details">
+          <h3>06</h3>
+          <p>3 years ago</p>
+          <p><span>Next Content Title</span></p>
+        </div>
+      </li>
+  
+      <li class="related-content-item page-2 hidden">
+        <img src="images/related_7.webp" alt ="Related Content Image 2">
+        <div class="related-content-details">
+          <h3>07</h3>
+          <p>3 years ago</p>
+          <p><span>Next Content Title</span></p>
+        </div>
+      </li>
+  
+      <li class="related-content-item page-2 hidden">
+        <img src="images/related_8.webp" alt ="Related Content Image 2">
+        <div class="related-content-details">
+          <h3>08</h3>
+          <p>3 years ago</p>
+          <p><span>Next Content Title</span></p>
+        </div>
+      </li>
+  
+
     </ul>
   </section>
+  
 
 
     <!-- Footer sectie -->
 
-    <footer class="footer-section">
+
+      <footer>
         <div class="footer-buttons">
-            <button class="download-button">Download Game Client</button>
-            <button class="download-button">Download Riot Games Mobile Companion App</button>
+            <a class="download-button">Download Game Client</a>
+            <a class="download-button">Download Riot Games Mobile Companion App</a>
         </div>
 
-        <div class="social-media-section">
-            <a href="#" class="social-icon"><img src="facebook-icon.png" alt="Facebook"></a>
-            <a href="#" class="social-icon"><img src="twitter-icon.png" alt="Twitter"></a>
-            <a href="#" class="social-icon"><img src="instagram-icon.png" alt="Instagram"></a>
-            <a href="#" class="social-icon"><img src="linkedin-icon.png" alt="LinkedIn"></a>
-            <a href="#" class="social-icon"><img src="youtube-icon.png" alt="YouTube"></a>
-        </div>
+        <ul class="footer-section social-icons">
+          <li><a href="#" ><img src="images/socials-twitter.png" alt="Facebook"></a></li>
+        
+          <li><a href="#" ><img src="images/socials-youtube.png" alt="Facebook"></a></li>
+        
+          <li><a href="#" ><img src="images/socials-icon-insta.png" alt="Facebook"></a></li>
+        
+          <li><a href="#" ><img src="images/socials-icon-facebook.png" alt="Facebook"></a></li>
+        
+          <li><a href="#" ><img src="images/socials-icon-discord.png" alt="Facebook"></a></li>
+        
+        </ul>
+
+        <ul class="footer-section logos">
+
+          <li><a href="#" ><img src="images/riotgames_logo_white.png" alt="Twitter"></a></li>
+          <li> <a href="#" ><img src="images/Valorant_logo-color.png" alt="Facebook"></a></li>
+
+        </ul>
+
 
         <div class="rights-section">
-            <p class="rights-text">All rights reserved. Trademarks, logos, and images are the property of their respective owners.</p>
+            <p class="rights-text">© 2020-2024 Riot Games, Inc. RIOT GAMES, VALORANT and any associated logos are trademarks, service marks, and/or registered trademarks of Riot Games, Inc.</p>
         </div>
 
-        <div class="info-buttons-section">
-            <button class="info-button">Privacy Notice</button>
-            <button class="info-button">Terms and Services</button>
-            <button class="info-button">Company Information</button>
-            <button class="info-button">Cookie Preferences</button>
-        </div>
+        <ul class="footer-section rights">
+          <li><a >Privacy Notice</a></li>
+          <li><a >Terms and Services</a></li>
+          <li><a >Company Information</a></li>
+          <li><a >Cookie Preferences</a></li>
+        </ul>
+
+        <ul class="pegi-section">
+          <li><a href="#" ><img src="images/footer-icon_1.jpg" alt="pegi"></a></li>
+          <li><a href="#" ><img src="images/footer-icon_2.png" alt="pegi"></a></li>
+          <li><a href="#" ><img src="images/footer-icon_3.png" alt="pegi"></a></li>
+        </ul>
+
+
 
     </footer>
 
